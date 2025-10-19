@@ -1,0 +1,30 @@
+{
+	"name": "x3p0-dev/x3p0-reflections",
+	"keywords": [ "wordpress" ],
+	"homepage": "https://x3p0.com",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Justin Tadlock",
+			"email": "justintadlock@gmail.com",
+			"homepage": "https://x3p0.com",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/x3p0-dev/x3p0-rough-draft/issues"
+	},
+	"autoload": {
+		"psr-4" : {
+			"X3P0\\RoughDraft\\": "src/"
+		},
+		"files": [
+			"src/functions-helpers.php"
+		]
+	},
+	"require": {
+                "php": ">=7.2"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

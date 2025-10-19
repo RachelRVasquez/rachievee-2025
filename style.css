@@ -1,0 +1,51 @@
+/*
+Theme Name: RachieVee-2025
+Theme URI: 
+Author: Rachel R. Vasquez
+Author URI: 
+Description: A block theme for RachieVee
+Requires at least: 6.8
+Tested up to: 6.8
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: rachievee-2025
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	background-repeat: no-repeat !important;
+}
+
+body .is-layout-constrained > * + :is( h1, h2, h3, h4, h5, h6 ) {
+	--wp--style--block-gap: var( --wp--preset--spacing--120 );
+	margin-top: var( --wp--style--block-gap );
+}
+
+body .is-layout-constrained > :is( h1, h2, h3, h4, h5, h6 ) + * {
+        --wp--style--block-gap: var( --wp--preset--spacing--40 );
+	margin-top: var( --wp--style--block-gap );
+}
+
+body .is-layout-constrained > :is( h1, h2, h3, h4, h5, h6 ) + :is( h2, h3, h4, h5, h6 ) {
+        --wp--style--block-gap: var( --wp--custom--spacing--20 );
+}
+
+body .is-layout-constrained > :is( hr, .wp-block-spacer ) + :is( h1, h2, h3, h4, h5, h6 ),
+body .is-layout-constrained > :is( h1, h2, h3, h4, h5, h6 ) + :is( hr, .wp-block-spacer ) {
+	--wp--style--block-gap: var( --wp--custom--spacing--80 );
+}
