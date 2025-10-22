@@ -47,11 +47,14 @@
 			"width": true
 		},
 		"color": {
-			"defaultPalette": false,
-			"customPalette": false,
 			"defaultGradients": false,
-            "customGradients": false,
+			"defaultPalette": false,
 			"gradients": [
+				{
+					"gradient": "linear-gradient(0deg, rgba(34, 39, 49, 1) 0%, rgba(0, 6, 17, 1) 45%)",
+					"name": "Header Dark Gradient",
+					"slug": "header-gradient"
+				},
 				{
 					"gradient": "linear-gradient(180deg, #1C7C82 0%, #11484D 100%)",
 					"name": "Footer Teal Gradient",
@@ -114,7 +117,6 @@
 					"name": "Default Border",
 					"slug": "border"
 				}
-				
 			]
 		},
 		"custom": {
@@ -266,6 +268,60 @@
 					"fontFamily": "'IBM Plex Mono', monospace",
 					"name": "Monospace",
 					"slug": "mono"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Playfair Display\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/playfair-display/playfair-display-400-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Playfair Display\", serif",
+					"name": "Playfair Display",
+					"slug": "playfair-display"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Work Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/work-sans/work-sans-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Work Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/work-sans/work-sans-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Work Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/work-sans/work-sans-400-italic.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Work Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/work-sans/work-sans-700-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Work Sans\", sans-serif",
+					"name": "Work Sans",
+					"slug": "work-sans"
 				}
 			],
 			"fontSizes": [
@@ -275,43 +331,43 @@
 					"slug": "xs"
 				},
 				{
-					"name": "Small",
-					"size": "0.9rem",
+					"name": "sm",
+					"size": "0.9375rem",
 					"slug": "sm"
 				},
 				{
-					"name": "Base",
+					"name": "Medium",
 					"size": "1rem",
 					"slug": "base"
 				},
 				{
 					"name": "Large",
-					"size": "1.1rem",
+					"size": "1.125rem",
 					"slug": "lg"
 				},
 				{
 					"name": "XL",
-					"size": "clamp(1.1rem, calc(1.1rem + ((1vw - 0.4rem) * 0.4167)), 1.2rem)",
+					"size": "2rem",
 					"slug": "xl"
 				},
 				{
 					"name": "2XL",
-					"size": "clamp(1.5rem, calc(1.5rem + ((1vw - 0.4rem) * 1.0417)), 1.75rem)",
+					"size": "clamp(1.25rem, calc(1.25rem + ((1vw - 0.4rem) * 1.0417)), 1.5rem)",
 					"slug": "2-xl"
 				},
 				{
 					"name": "3XL",
-					"size": "clamp(1.75rem, calc(1.75rem + ((1vw - 0.4rem) * 1.25)), 2rem)",
+					"size": "2.15rem",
 					"slug": "3-xl"
 				},
 				{
 					"name": "4XL",
-					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 2.0833)), 2.5rem)",
+					"size": "clamp(1.5rem, calc(1.5rem + ((1vw - 0.4rem) * 3.125)), 2.25rem)",
 					"slug": "4-xl"
 				},
 				{
 					"name": "5XL",
-					"size": "clamp(2.25rem, calc(2.25rem + ((1vw - 0.4rem) * 3.125)), 3rem)",
+					"size": "clamp(1.75rem, calc(1.75rem + ((1vw - 0.4rem) * 5.2083)), 3rem)",
 					"slug": "5-xl"
 				}
 			]
@@ -781,8 +837,8 @@
 			}
 		},
 		"color": {
-			"background": "var( --wp--preset--color--white )",
-			"text": "var( --wp--preset--color--contrast )"
+			"background": "var(--wp--preset--color--body-bg)",
+			"text": "var(--wp--preset--color--text-primary)"
 		},
 		"elements": {
 			"button": {
@@ -814,8 +870,8 @@
 					"radius": "0"
 				},
 				"color": {
-					"background": "var( --wp--preset--color--primary-500 )",
-					"text": "var( --wp--preset--color--white )"
+					"background": "var(--wp--preset--color--accent-orange)",
+					"text": "var(--wp--preset--color--body-bg)"
 				},
 				"typography": {
 					"fontFamily": "var( --wp--preset--font-family--mono )",
@@ -824,6 +880,9 @@
 				}
 			},
 			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--text-primary)"
+				},
 				"typography": {
 					"fontFamily": "var( --wp--preset--font-family--mono )",
 					"fontSize": "var( --wp--preset--font-size--sm )",
@@ -878,7 +937,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "var( --wp--preset--color--tertiary )"
+					"text": "var(--wp--preset--color--heading-primary)"
 				},
 				"spacing": {
 					"margin": "0"

@@ -16,10 +16,10 @@
 	},
 	"autoload": {
 		"psr-4" : {
-			"X3P0\\RoughDraft\\": "src/"
+			"X3P0\\RoughDraft\\": "inc/"
 		},
 		"files": [
-			"src/functions-helpers.php"
+			"inc/functions-helpers.php"
 		]
 	},
 	"require": {

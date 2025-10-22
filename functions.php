@@ -63,6 +63,22 @@ if ( ! function_exists( 'rachievee_2025_styles' ) ) :
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'rachievee-2025-style' );
 
+		wp_enqueue_style(
+			'rachievee-2025-main',
+			get_template_directory_uri() . '/assets/css/style.css',
+			['rachievee-2025-style'], // make it load after the main one
+			$version_string
+		);
+
+		// add_action( 'enqueue_block_editor_assets', function() {
+		// 	wp_enqueue_style(
+		// 		'rachievee-2025-editor',
+		// 		get_template_directory_uri() . '/assets/css/editor.css',
+		// 		[],
+		// 		wp_get_theme()->get( 'Version' )
+		// 	);
+		// });
+		
 	}
 
 endif;
