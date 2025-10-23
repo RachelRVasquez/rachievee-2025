@@ -1,22 +1,22 @@
 {
 	"name": "x3p0-dev/x3p0-reflections",
 	"keywords": [ "wordpress" ],
-	"homepage": "https://x3p0.com",
+	"homepage": "https://www.rrvasquez.com",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
-			"name": "Justin Tadlock",
-			"email": "justintadlock@gmail.com",
-			"homepage": "https://x3p0.com",
+			"name": "Rachel Vasquez",
+			"email": "rachelrvasquez@gmail.com",
+			"homepage": "https://www.rrvasquez.com",
 			"role": "Developer"
 		}
 	],
 	"support": {
-		"issues": "https://github.com/x3p0-dev/x3p0-rough-draft/issues"
+		"issues": "https://github.com/RachelRVasquez/rachievee-2025/issues"
 	},
 	"autoload": {
 		"psr-4" : {
-			"X3P0\\RoughDraft\\": "inc/"
+			"RachieVee2025\\": "inc/"
 		},
 		"files": [
 			"inc/functions-helpers.php"

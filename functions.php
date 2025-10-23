@@ -12,20 +12,13 @@
 // Load Composer autoloader
 require_once get_template_directory() . '/vendor/autoload.php';
 
-use X3P0\RoughDraft;
+use RachieVee2025;
 
-RoughDraft\theme();
+RachieVee2025\theme();
 
-
-// add_action( 'init', 'themeslug_register_pattern_categories' );
 
 add_filter( 'should_load_remote_block_patterns', '__return_false' );
 
-// function themeslug_register_pattern_categories() {
-// 	register_block_pattern_category( 'themeslug', array(
-// 		'label' => __( 'Theme Name', 'themeslug' )
-// 	) );
-// }
 
 if ( ! function_exists( 'rachievee_2025_support' ) ) :
 

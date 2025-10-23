@@ -1,9 +1,8 @@
 <?php
-namespace X3P0\RoughDraft;
+namespace RachieVee2025;
 
 class BlockStyles {
 	public function boot() {
-		error_log('BlockStyles boot() fired');
 		add_action( 'init', [ $this, 'register_block_styles' ] );
 	}
 
