@@ -28,12 +28,6 @@ function theme( string $abstract = '' ) {
 	// On first run, create new components and boot them.
 	if ( is_null( $bindings ) ) {
 		$bindings = [
-			Assets::class => new Assets(
-				new Mix(
-					get_parent_theme_file_path( 'public' ),
-					get_parent_theme_file_uri( 'public' )
-				)
-			),
 			BlockStyles::class    => new BlockStyles()
 		];
 
