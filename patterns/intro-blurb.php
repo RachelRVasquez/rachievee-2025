@@ -12,8 +12,8 @@
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"0rem","margin":{"top":"0px","bottom":"0px"},"padding":{"bottom":"var:preset|spacing|60","top":"var:preset|spacing|60"}}},"gradient":"header-gradient","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-header-gradient-gradient-background has-background" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|heading-primary"}}},"spacing":{"padding":{"bottom":"0px"},"margin":{"bottom":"0px"}}},"textColor":"heading-primary","fontSize":"5-xl","fontFamily":"playfair-display"} -->
-<h2 class="wp-block-heading has-text-align-center has-heading-primary-color has-text-color has-link-color has-playfair-display-font-family has-5-xl-font-size" style="margin-bottom:0px;padding-bottom:0px">Hello, I'm Rachel!</h2>
+<div class="wp-block-group has-header-gradient-gradient-background has-background" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"center","className":"transition-fadeUp","style":{"elements":{"link":{"color":{"text":"var:preset|color|heading-primary"}}},"spacing":{"padding":{"bottom":"0px"},"margin":{"bottom":"0px"}}},"textColor":"heading-primary","fontSize":"5-xl","fontFamily":"playfair-display"} -->
+<h2 class="wp-block-heading has-text-align-center transition-fadeUp has-heading-primary-color has-text-color has-link-color has-playfair-display-font-family has-5-xl-font-size" style="margin-bottom:0px;padding-bottom:0px">Hello, I'm Rachel!</h2>
 <!-- /wp:heading -->
 
 <!-- wp:image {"width":"200px","sizeSlug":"full","linkDestination":"none","align":"center"} -->

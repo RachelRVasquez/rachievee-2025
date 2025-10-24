@@ -108,12 +108,7 @@
 					"slug": "post-title"
 				},
 				{
-					"color": "#C2D1F4",
-					"name": "Post Meta Link",
-					"slug": "link-meta"
-				},
-				{
-					"color": "#1B202A",
+					"color": "#474d5a",
 					"name": "Default Border",
 					"slug": "border"
 				}
@@ -937,7 +932,7 @@
 			},
 			"heading": {
 				"color": {
-					"text": "var(--wp--preset--color--heading-primary)"
+					"text": "var(--wp--preset--color--post-title)"
 				},
 				"spacing": {
 					"margin": "0"
