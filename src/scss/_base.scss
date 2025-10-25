@@ -1,3 +1,27 @@
+* {
+	box-sizing: inherit;
+}
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	font-family: var(--wp--preset--font-family--work-sans);
+}
+
+.wp-site-blocks {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--wp--preset--font-family--playfair-display);
+}
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -49,4 +73,8 @@ a {
 
 pre {
 	width: 100%;
+	background: var(--wp--preset--color--text-primary);
+    border-radius: 15px;
+    padding: 1.5rem;
+    color: var(--wp--preset--color--text-secondary);
 }

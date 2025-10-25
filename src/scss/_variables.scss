@@ -1,87 +1,57 @@
 /* Colors --- */
+/* Using CSS custom properties from theme.json where possible */
 
-$color__background-body: #222731;
-$color__background-screen: #FDF7F4;
-$color__background-header: #000611;
+// Sass color values (for functions like darken/lighten)
+$color__background-body-sass: #222731;
+$color__background-header-sass: #000611;
+$color__background-footer-sass: #1C7C82;
+$color__background-button-sass: #FF9972;
+$color__text-main-sass: #FDF7F4;
+$color__text-secondary-sass: #06142E;
+$color__post-title-sass: #aff9ff;
+$color__main-heading-sass: #6DC4CB;
+$color__sub-heading-sass: #C2D1F4;
+$color__link-sass: #FF9972;
+
+// Theme.json colors (using CSS custom properties for direct usage)
+$color__background-body: var(--wp--preset--color--body-bg);
+$color__background-header: var(--wp--preset--color--bg-header);
+$color__background-footer: var(--wp--preset--color--bg-footer);
+$color__background-button: var(--wp--preset--color--accent-orange);
+$color__text-main: var(--wp--preset--color--text-primary);
+$color__text-secondary: var(--wp--preset--color--text-secondary);
+$color__post-title: var(--wp--preset--color--post-title);
+$color__main-heading: var(--wp--preset--color--heading-primary);
+$color__sub-heading: var(--wp--preset--color--heading-secondary);
+$color__link: var(--wp--preset--color--accent-orange);
+
+// Derived colors (using Sass color values for functions)
 $color__background-header2: $color__background-body;
-$color__background-footer: #1C7C82;
+$color__background-hr: darken( $color__background-body-sass, 10%);
+$color__background-article: $color__background-body;
+$color__read-more: $color__post-title;
+$color__homepage-blurb-title: $color__main-heading;
+$color__homepage-blurb-text: $color__text-main;
+$color__link-visited: $color__link;
+$color__link-hover: lighten( $color__link-sass, 10% );
+$color__link-meta: $color__sub-heading;
+$color__link-meta-hover: $color__link;
+$color__header-link-after: $color__link;
+$color__border-header: darken( $color__background-body-sass, 10%);
+$color__border-button: $color__link;
+$color__border-button-hover: darken( $color__link-sass, 10% );
 
-$color__background-hr: darken( $color__background-body, 10%);
-$color__background-button: #FF9972;
+// Custom colors not in theme.json
+$color__background-screen: #FDF7F4;
 $color__background-pre: #FDF7F4;
 $color__text-pre: #06142E;
 $color__background-blockquote: #292f3b;
-
 $color__background-ins: #fff9c0;
-$color__background-article: $color__background-body;
-
 $color__text-screen: #06142E;
 $color__text-input: #333;
 $color__text-input-focus: #111;
-
-$color__post-title: #aff9ff;
-$color__read-more: $color__post-title;
-
-$color__main-heading: #6DC4CB;
-$color__sub-heading: #C2D1F4;
-$color__homepage-blurb-title: #6DC4CB;
-$color__homepage-blurb-text: #FDF7F4;
-
-$color__link: #FF9972;
-$color__link-visited: $color__link;
-$color__link-hover: lighten( $color__link, 10% );
-$color__link-meta: #C2D1F4;
-$color__link-meta-hover: #FF9972;
-
-$color__text-main: #FDF7F4;
-$color__text-secondary: #06142E;
-$color__header-link-after: $color__link;
-
-$color__border-header: darken( $color__background-body, 10%);
-$color__border-button: #FF9972;
-$color__border-button-hover: darken( $color__border-button, 10% );
-
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-
-/* Light Theme --- */
-
-$color__background-body: #222731;
-$color__background-screen: #FDF7F4;
-$color__background-header: #000611;
-$color__background-header2: $color__background-body;
-$color__background-footer: #1C7C82;
-
-$color__background-hr: darken( $color__background-body, 10%);
-$color__background-button: #FF9972;
-$color__background-pre: #FDF7F4;
-$color__text-pre: #06142E;
-$color__background-blockquote: #292f3b;
-
-$color__background-ins: #fff9c0;
-$color__background-article: $color__background-body;
-
-$color__text-screen: #6DC4CB;
-$color__text-input: #333;
-$color__text-input-focus: #111;
-
-$color__post-title: #aff9ff;
-$color__read-more: $color__post-title;
-
-$color__main-heading: #6DC4CB;
-$color__sub-heading: #C2D1F4;
-$color__homepage-blurb-title: #6DC4CB;
-$color__homepage-blurb-text: #FDF7F4;
-
-$color__link: #FF9972;
-$color__link-meta: #C2D1F4;
-$color__link-meta-hover: #FF9972;
-
-$color__text-main: #FDF7F4;
-$color__text-secondary: #06142E;
-
-$color__border-header: darken( $color__background-body, 10%);
-$color__border-button: #FF9972;
 
 
 /* Columns --- */

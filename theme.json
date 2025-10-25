@@ -232,56 +232,6 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Open Sans",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "300 800",
-							"src": [
-								"file:./assets/fonts/OpenSans-VariableFont_wdth,wght.woff2"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "300 800",
-							"src": [
-								"file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2"
-							]
-						}
-					],
-					"fontFamily": "\"Open Sans\", serif",
-					"name": "Open Sans",
-					"slug": "open-sans"
-				},
-				{
-					"fontFamily": "system-ui",
-					"name": "Headings",
-					"slug": "headings"
-				},
-				{
-					"fontFamily": "'IBM Plex Mono', monospace",
-					"name": "Monospace",
-					"slug": "mono"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "\"Playfair Display\"",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/playfair-display/playfair-display-400-normal.woff2"
-							]
-						}
-					],
-					"fontFamily": "\"Playfair Display\", serif",
-					"name": "Playfair Display",
-					"slug": "playfair-display"
-				},
-				{
-					"fontFace": [
-						{
 							"fontFamily": "\"Work Sans\"",
 							"fontStyle": "normal",
 							"fontWeight": "400",
@@ -317,6 +267,26 @@
 					"fontFamily": "\"Work Sans\", sans-serif",
 					"name": "Work Sans",
 					"slug": "work-sans"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Playfair Display\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/playfair-display/playfair-display-400-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Playfair Display\", serif",
+					"name": "Playfair Display",
+					"slug": "playfair-display"
+				},
+				{
+					"fontFamily": "'IBM Plex Mono', monospace",
+					"name": "Monospace",
+					"slug": "mono"
 				}
 			],
 			"fontSizes": [
@@ -612,7 +582,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var( --wp--preset--font-family--open-sans )",
+					"fontFamily": "var( --wp--preset--font-family--work-sans )",
 					"fontSize": "var( --wp--preset--font-size--base )",
 					"fontWeight": "400",
 					"lineHeight": "1em"
@@ -815,7 +785,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var( --wp--preset--font-family--headings )",
+					"fontFamily": "var( --wp--preset--font-family--playfair-display )",
 					"fontSize": "var( --wp--preset--font-size--lg )",
 					"fontStyle": "normal",
 					"fontWeight": "900",
@@ -938,7 +908,7 @@
 					"margin": "0"
 				},
 				"typography": {
-					"fontFamily": "var( --wp--preset--font-family--headings )",
+					"fontFamily": "var( --wp--preset--font-family--playfair-display )",
 					"fontWeight": "900",
 					"letterSpacing": "-0.05rem",
 					"lineHeight": "1.4",
@@ -986,7 +956,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var( --wp--preset--font-family--open-sans )",
+			"fontFamily": "var( --wp--preset--font-family--work-sans )",
 			"fontSize": "var( --wp--preset--font-size--base )",
 			"lineHeight": "var( --wp--custom--line-height--base )"
 		}
