@@ -14,3 +14,12 @@ footer {
         }
     }
 }
+
+//@todo: Make editable from the WP editor
+.home {
+    footer {
+        > .wp-block-group:first-of-type {
+            background-color: var(--wp--preset--color--bg-header);
+        }
+    }
+}

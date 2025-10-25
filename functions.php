@@ -75,7 +75,25 @@ if ( ! function_exists( 'rachievee_2025_styles' ) ) :
 
 endif;
 
-add_action( 'wp_enqueue_scripts', 'rachievee_2025_styles' );
+	add_action( 'wp_enqueue_scripts', 'rachievee_2025_styles' );
+
+// Enqueue header scroll script
+if ( ! function_exists( 'rachievee_2025_scripts' ) ) :
+	function rachievee_2025_scripts() {
+		$theme_version = wp_get_theme()->get( 'Version' );
+		$version_string = is_string( $theme_version ) ? $theme_version : false;
+		
+		wp_enqueue_script(
+			'rachievee-2025-header-scroll',
+			get_template_directory_uri() . '/assets/js/header-scroll.js',
+			array(),
+			$version_string,
+			true
+		);
+	}
+endif;
+
+add_action( 'wp_enqueue_scripts', 'rachievee_2025_scripts' );
 
 // EDITOR STYLES
 if ( ! function_exists( 'rachievee_2025_editor_styles' ) ) :
