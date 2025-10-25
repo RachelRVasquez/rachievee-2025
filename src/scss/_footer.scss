@@ -1,0 +1,16 @@
+footer {
+    margin-block-start: 0;
+    position: relative;
+
+    > .wp-block-group:first-of-type {
+        margin-bottom: -10px;
+    }
+
+    svg {
+        width: 100%;
+
+        .shape-fill {
+            fill: variables.$color__background-footer;
+        }
+    }
+}

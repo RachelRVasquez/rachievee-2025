@@ -1,0 +1,101 @@
+/* Blocks ---------- */
+
+.has-header-gradient-gradient-background {
+    margin-block-start: 0;
+}
+
+.wp-block-image img {
+    border: none;
+}
+
+.is-style-button-fill {
+   a {
+    border: 1px solid;
+    border: none;
+    border-radius: 3px;
+    background: variables.$color__background-button;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: variables.$color__text-secondary;
+    line-height: 1;
+    padding: 0.6em 1em;
+    
+    &:hover, &:active, &:focus {
+        transition: all .3s ease-in-out;
+        background: variables.$color__border-button-hover;
+        box-shadow: 1px 2px 20px variables.$color__background-button;
+    }
+   }
+}
+
+.is-style-button-outline,
+.wp-block-post-terms {
+   a {
+    border: 1px solid variables.$color__background-button;
+    border-radius: 3px;
+    background: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: variables.$color__background-button;
+    line-height: 3;
+    padding: 0.6em 1em;
+    
+    &:hover, &:active, &:focus {
+        transition: all .3s ease-in-out;
+        background: variables.$color__background-button;
+        color: variables.$color__text-secondary;
+    }
+   }
+
+   &.taxonomy-post_tag {
+    a {
+        font-size: var(--wp--preset--font-size--xs);
+    }
+   }
+}
+
+.is-style-arrow {
+    position: relative;
+    
+    a {
+        position: relative;
+        padding-right: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+        &::after {
+            content: "→";
+            position: absolute;
+            right: 0;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        &:hover::after {
+            transform: translateX(0.3em);
+        }
+    }
+}
+
+.wp-block-post-title a:visited {
+    color: variables.$color__post-title;
+}
+
+.wp-block-navigation-link,
+.wp-social-link {
+    a {
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale3d(1.2, 1.2, 1.2);
+        }
+    }
+}
+
+.blog-template {
+    .wp-block-post-template > li > .wp-block-group {
+        border-color: #474d5a;
+    }
+}

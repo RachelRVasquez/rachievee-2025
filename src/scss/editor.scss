@@ -1,9 +1,5 @@
 @use './variables';
 
-//@todo: Use colors from theme.json where possible
-
-/* Blocks (move to separate stylesheet) --------*/
-
 .wp-block-list.is-style-horizontal {
     display: flex;
     flex-wrap: wrap;
