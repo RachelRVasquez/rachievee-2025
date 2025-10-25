@@ -53,9 +53,25 @@ a {
 	}
 }
 
+.wp-block-post-title a:visited {
+    color: variables.$color__post-title;
+}
+
 footer {
     margin-block-start: 0;
     position: relative;
+
+    > .wp-block-group:first-of-type {
+        margin-bottom: -10px;
+    }
+
+    svg {
+        width: 100%;
+
+        .shape-fill {
+            fill: variables.$color__background-footer;
+        }
+    }
 }
 
 @keyframes fadeLeft {
@@ -94,7 +110,7 @@ footer {
         transition: transform .2s;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale3d(1.2, 1.2, 1.2);
         }
     }
 }
@@ -110,6 +126,10 @@ footer {
 
 .has-header-gradient-gradient-background {
     margin-block-start: 0;
+}
+
+.wp-block-image img {
+    border: none;
 }
 
 .is-style-button-fill {
