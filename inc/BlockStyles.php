@@ -35,5 +35,12 @@ class BlockStyles {
 				'label' => __( 'Link Arrow Style', 'rachievee-2025' ),
 			]
 		);
+		register_block_style(
+			'core/group',
+			[
+				'name'  => 'full-height',
+				'label' => __( 'Full Height', 'rachievee-2025' ),
+			]
+		);
 	}
 }
