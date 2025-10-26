@@ -5,15 +5,18 @@ header {
     z-index: 10;
    
     .has-bg-header-background-color {
-        transition: background-color 0.3s ease;
-        backdrop-filter: blur(10px); // Adds a nice blur effect when scrolled
-
-        // When scrolled, make background more opaque using rgba with the header color
+        //@todo: allowing this on mobile breaks the menu modal...
+        @media (min-width: 768px) {
+            transition: background-color 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
     }
 
     &.is-sticky {
         .has-bg-header-background-color {
-            background-color: rgba(0, 6, 17, 0.5) !important; // 95% opacity of bg-header color (#000611);
+            @media (min-width: 768px) {
+                background-color: rgba(0, 6, 17, 0.5) !important; // 95% opacity of bg-header color (#000611);
+            }
         }
     }
     
