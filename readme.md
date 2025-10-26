@@ -1,25 +1,27 @@
-== RachieVee-2025 ==
-
-Contributors: Rachel R. Vasquez
-Requires at least: 6.8
-Tested up to: 6.8
-Requires PHP: 5.7
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# RachieVee 2025 Block Theme for WordPress
 
 
-== Description ==
+## Description
 
-A block theme for RachieVee
+A FSE (full site editing) block theme for my personal site and blog for 2025. I've thrown it together in a few days so there is still plenty to add and plenty to do.
+
+### Things in the works
+
+- Projects list for the "Projects" page
+- Scroll to top button
+- Light and dark mode toggle
+- Light and dark mode color schemes from the WP editor
+- Fancier search w/ filters would be nice
+- Custom blocks and variations will be added via plugin in a separate repository
 
 
-== Changelog ==
+## Changelog
 
 = 1.0.0 =
 * Initial release
 
 
-== Copyright ==
+## Copyright
 
 RachieVee-2025 WordPress Theme, (C) 2025 Rachel R. Vasquez
 RachieVee-2025 is distributed under the terms of the GNU GPL.
@@ -36,4 +38,11 @@ GNU General Public License for more details.
 
 
 RachieVee-2025 is based on X3P0 - Rough Draft (https://github.com/WordPress/twentytwentythree), (C) wordpressdotorg, []()
+
+- Contributors: Rachel R. Vasquez
+- Requires at least: 6.8
+- Tested up to: 6.8
+- Requires PHP: 5.7
+- License: GPLv2 or later
+- License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
