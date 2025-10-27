@@ -53,29 +53,6 @@ $color__text-input-focus: #111;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-
-/* Columns --- */
-
-$columns: (
-	1: 100%,
-	2: 50%,
-	3: 33.33%,
-	4: 25%,
-	5: 20%,
-	6: 16.66%,
-	7: 14.28%,
-	8: 12.5%,
-	9: 11.11%
-);
-
-$columns__margin: 3.8%;
-
-/* Structure --- */
-
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
-$size__site-width: 1440px;
-
 //Breakpoints borrowed from Bootstrap 5.3
 $grid-breakpoints: (
   xs: 0,
@@ -86,15 +63,3 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px
 );
-
-/* Typography --- */
-
-// stylelint-disable value-keyword-case
-$font__main: "Work Sans", sans-serif;
-// stylelint-enable value-keyword-case
-$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
-
-$font__heading: "Playfair Display", serif;

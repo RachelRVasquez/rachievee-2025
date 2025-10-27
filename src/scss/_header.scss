@@ -19,5 +19,15 @@ header {
             }
         }
     }
+
+    .wp-block-social-links {
+        a {
+            opacity: .7;
+
+            &:hover, &:focus, &:active {
+                opacity: 1;
+            }
+        }
+    }
     
 }
