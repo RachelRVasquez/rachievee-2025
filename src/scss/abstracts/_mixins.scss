@@ -1,0 +1,43 @@
+@use './variables';
+
+/* RESPONSIVE ---------------- */
+
+@mixin mobile-only {
+	@media (max-width: map-get($grid-breakpoints, mobile)) {
+		@content;
+	}
+}
+
+@mixin tablet-up {
+	@media (min-width: map-get($grid-breakpoints, md)) {
+		@content;
+	}
+}
+
+@mixin large-up {
+	@media (min-width: map-get($grid-breakpoints, lg)) {
+		@content;
+	}
+}
+
+/* UTILITIES  ---------------- */
+
+@mixin remove-btn-defaults() {
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+}
+
+@mixin screen-reader-only {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; // Many screen reader and browser combinations announce broken words as they would appear visually.
+}
