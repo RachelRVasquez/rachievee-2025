@@ -11,13 +11,12 @@
 .is-style-button-fill {
     a {
         border: 1px solid;
-        border: none;
         border-radius: 3px;
-        background: variables.$color__background-button;
+        background: $color__background-button;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: variables.$color__text-secondary;
+        color: var(--wp--preset--color--text-secondary);
         line-height: 1;
         padding: 0.6em 1em;
 
@@ -25,8 +24,8 @@
         &:active,
         &:focus {
             transition: all .3s ease-in-out;
-            background: variables.$color__border-button-hover;
-            box-shadow: 1px 2px 20px variables.$color__background-button;
+            background: $color__border-button-hover;
+            box-shadow: 1px 2px 20px $color__background-button;
         }
     }
 }
@@ -36,13 +35,13 @@
     white-space: nowrap;
 
     a {
-        border: 1px solid variables.$color__background-button;
+        border: 1px solid $color__background-button;
         border-radius: 3px;
         background: transparent;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 1px;
-        color: variables.$color__background-button;
+        color: $color__background-button;
         line-height: 3;
         padding: 0.6em 1em;
         word-break: normal;
@@ -53,8 +52,8 @@
         &:active,
         &:focus {
             transition: all .3s ease-in-out;
-            background: variables.$color__background-button;
-            color: variables.$color__text-secondary;
+            background: $color__background-button;
+            color: var(--wp--preset--color--text-secondary);
         }
     }
 

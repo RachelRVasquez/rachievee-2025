@@ -1,5 +1,3 @@
-@use './variables';
-
 /* RESPONSIVE ---------------- */
 
 @mixin mobile-only {
@@ -19,6 +17,8 @@
 		@content;
 	}
 }
+
+//@todo: Add button and link styles
 
 /* UTILITIES  ---------------- */
 

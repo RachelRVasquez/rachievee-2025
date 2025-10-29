@@ -10,8 +10,12 @@ footer {
         width: 100%;
 
         .shape-fill {
-            fill: variables.$color__background-footer;
+            fill: $color__background-footer;
         }
+    }
+
+    a {
+        color: $color__text-main;
     }
 }
 
@@ -19,7 +23,7 @@ footer {
 .home {
     footer {
         > .wp-block-group:first-of-type {
-            background-color: var(--wp--preset--color--bg-header);
+            background-color: $color__background-header;
         }
     }
 }

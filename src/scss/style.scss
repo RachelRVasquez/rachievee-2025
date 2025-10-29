@@ -1,9 +1,66 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
 @import './base/base';
 @import './site/header';
 @import './site/footer';
 @import './blocks/blocks';
 
 
+.vp-portfolio__items-style-default .vp-portfolio__item-meta-categories .vp-portfolio__item-meta-category {
+    display: none;
+}
+
+.vp-filter__style-default .vp-filter__item>* {
+    border: 1px solid $color__background-button;
+        border-radius: 3px;
+        background: transparent;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $color__background-button;
+        line-height: 1;
+        word-break: normal;
+        overflow-wrap: break-word;
+
+
+        &:hover,
+        &:active,
+        &:focus {
+            transition: all .3s ease-in-out;
+            background: $color__background-button;
+            color: var(--wp--preset--color--text-secondary);
+        }
+}
+
+.vp-filter__style-default .vp-filter__item.vp-filter__item-active>* {
+    border-radius: 3px;
+    background: var(--wp--preset--color--accent-orange);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--wp--preset--color--text-secondary);
+    line-height: 1;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        transition: all .3s ease-in-out;
+        background: $color__border-button-hover;
+        box-shadow: 1px 2px 20px $color__background-button;
+    }
+}
+
+.visual-portfolio-archive .wp-block-gallery.has-nested-images.columns-6 figure.wp-block-image:not(#individual-image) {
+    width: 100px;
+
+    img {
+        width: 150px;
+    }
+}
+
+.vp-portfolio__items-style-default .vp-portfolio__item-meta {
+    padding: 1rem;
+}
 
 
 
