@@ -5,7 +5,8 @@
 @import './site/footer';
 @import './blocks/blocks';
 
-
+//@todo: Move and clean up ugly styles when it's not 1 in the morning...
+//can you pay my bills, can you pay my telephone bills, can you pay my automobiles...
 .vp-portfolio__items-style-default .vp-portfolio__item-meta-categories .vp-portfolio__item-meta-category {
     display: none;
 }
@@ -40,14 +41,12 @@
     letter-spacing: 1px;
     color: var(--wp--preset--color--text-secondary);
     line-height: 1;
-    
-    &:hover,
-    &:active,
-    &:focus {
-        transition: all .3s ease-in-out;
-        background: $color__border-button-hover;
-        box-shadow: 1px 2px 20px $color__background-button;
-    }
+}
+
+.vp-filter__style-default .vp-filter__item>a:focus, .vp-filter__style-default .vp-filter__item>a:hover {
+    transition: all .3s ease-in-out;
+    background: $color__border-button-hover;
+    color: var(--wp--preset--color--text-secondary);
 }
 
 .visual-portfolio-archive .wp-block-gallery.has-nested-images.columns-6 figure.wp-block-image:not(#individual-image) {
