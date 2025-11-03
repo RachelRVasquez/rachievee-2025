@@ -12,12 +12,18 @@
 	border: 1px solid;
 }
 
+.is-style-button-fill {
+	 a {
+		 @include link_btn_style();
+	 }
+}
+
 .is-style-button-outline,
 .wp-block-post-terms {
     white-space: nowrap;
 
     a {
-       @include link_btn_style();
+       @include link_btn_style_outline();
 		line-height: 3;
     }
 

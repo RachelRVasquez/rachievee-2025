@@ -41,6 +41,29 @@
 	}
 }
 
+@mixin link_btn_style_outline {
+	border: 1px solid $color__background-button;
+	border-radius: 3px;
+	background: transparent;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $color__background-button;
+	line-height: 3;
+	padding: 0.6em 1em;
+	word-break: normal;
+	overflow-wrap: break-word;
+
+
+	&:hover,
+	&:active,
+	&:focus {
+		transition: all .3s ease-in-out;
+		background: $color__background-button;
+		color: var(--wp--preset--color--text-secondary);
+	}
+}
+
 @mixin link_arrow_style_base {
 	position: relative;
 	padding-right: 1.5em;
