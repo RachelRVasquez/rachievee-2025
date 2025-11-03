@@ -64,16 +64,21 @@
     }
 }
 
+.is-style-arrow,
+.is-style-down-arrow {
+	position: relative;
+
+	a {
+		position: relative;
+		padding-right: 1.5em;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
 .is-style-arrow {
-    position: relative;
-
     a {
-        position: relative;
-        padding-right: 1.5em;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-
         &::after {
             content: "→";
             position: absolute;
@@ -85,6 +90,21 @@
             transform: translateX(0.3em);
         }
     }
+}
+
+.is-style-down-arrow {
+	a {
+		&::after {
+			content: "→";
+			display: block;
+			transition: transform 0.3s ease-in-out;
+			transform: rotate(90deg);
+		}
+
+		&:hover::after {
+			transform: translate(0px, 3px) rotate(90deg);
+		}
+	}
 }
 
 .wp-block-post-title a:visited {

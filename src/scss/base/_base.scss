@@ -20,6 +20,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--wp--preset--font-family--playfair-display);
+	letter-spacing: 1px;
 }
 
 button,
@@ -36,7 +37,7 @@ input[type="submit"] {
 	color: var(--wp--preset--color--text-secondary);
 	line-height: 1;
 	padding: 0.6em 1em;
-	
+
 	&:hover, &:active, &:focus {
 		transition: all .3s ease-in-out;
 		background: $color__border-button-hover;
@@ -76,4 +77,8 @@ pre {
     border-radius: 15px;
     padding: 1.5rem;
     color: var(--wp--preset--color--text-secondary);
+}
+
+hr {
+
 }

@@ -32,7 +32,14 @@ class BlockStyles {
 			'core/paragraph',
 			[
 				'name'  => 'arrow',
-				'label' => __( 'Link Arrow Style', 'rachievee-2025' ),
+				'label' => __( 'Link Right Arrow Style', 'rachievee-2025' ),
+			]
+		);
+		register_block_style(
+			'core/paragraph',
+			[
+				'name'  => 'down-arrow',
+				'label' => __( 'Link Down Arrow Style', 'rachievee-2025' ),
 			]
 		);
 		register_block_style(
