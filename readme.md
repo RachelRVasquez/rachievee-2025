@@ -7,7 +7,8 @@ A FSE (full site editing) block theme for my personal site and blog for 2025. I'
 
 ### Things in the works
 
-- Projects list for the "Projects" page
+- Projects list for the "Projects" page [Complete]
+- Reduce movement button
 - Scroll to top button
 - Light and dark mode toggle
 - Light and dark mode color schemes from the WP editor

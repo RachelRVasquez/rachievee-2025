@@ -1,84 +1,23 @@
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
-.wp-block-list.is-style-horizontal {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.is-style-arrow,
+.is-style-down-arrow {
+	position: relative;
 
-    li {
-        margin: 0 1rem 1rem 0;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
+	a {
+		@include link_arrow_style_base();
+	}
 }
 
-
-.is-style-button-fill {
-        a {
-            border: 1px solid;
-        border: none;
-        border-radius: 3px;
-        background: var(--wp--preset--color--accent-orange);
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 1px;
-        color: var(--wp--preset--color--text-secondary);
-        line-height: 1;
-        padding: 0.6em 1em;
-        
-        &:hover, &:active, &:focus {
-            transition: all .3s ease-in-out;
-            background: $color__border-button-hover;
-        }
-        }
-    }
-
-.is-style-button-outline {
-       a {
-        border: 1px solid var(--wp--preset--color--accent-orange);
-        border-radius: 3px;
-        background: transparent;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 1px;
-        color: var(--wp--preset--color--accent-orange);
-        line-height: 1;
-        padding: 0.6em 1em;
-        
-        &:hover, &:active, &:focus {
-            transition: all .3s ease-in-out;
-            background: var(--wp--preset--color--accent-orange);
-            color: var(--wp--preset--color--text-secondary);
-        }
-       }
-    }
-
 .is-style-arrow {
-        position: relative;
-        
-        a {
-            position: relative;
-            padding-right: 1.5em;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            
-            &::after {
-                content: "→";
-                position: absolute;
-                right: 0;
-                transition: transform 0.3s ease-in-out;
-            }
-            
-            &:hover::after {
-                transform: translateX(0.3em);
-            }
-        }
-    }
+	a {
+		@include link_arrow_style_right();
+	}
+}
+
+.is-style-down-arrow {
+	a {
+		@include link_arrow_style_down();
+	}
+}

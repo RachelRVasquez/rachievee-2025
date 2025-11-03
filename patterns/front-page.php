@@ -2,12 +2,12 @@
 /**
  * Title: front-page
  * Slug: rachievee-2025/front-page
- * Description: 
- * Categories: 
- * Keywords: 
+ * Description:
+ * Categories:
+ * Keywords:
  * Viewport Width: 1280
- * Block Types: 
- * Post Types: 
+ * Block Types:
+ * Post Types:
  * Inserter: false
  */
 ?>
@@ -31,7 +31,7 @@
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"66.66%","animationsForBlocks":{"animation":"","variation":"fade"}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:66.66%"><!-- wp:heading {"animationsForBlocks":{"animation":"","variation":"up-right","mirror":false,"once":false},"style":{"typography":{"letterSpacing":"1px","fontWeight":"700","fontStyle":"normal"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"textColor":"text-primary","fontSize":"xl","fontFamily":"playfair-display"} -->
-<h2 class="wp-block-heading has-text-primary-color has-text-color has-playfair-display-font-family has-xl-font-size" style="margin-bottom:var(--wp--preset--spacing--40);font-style:normal;font-weight:700;letter-spacing:1px">About Me</h2>
+<h2 class="wp-block-heading has-text-primary-color has-text-color has-playfair-display-font-family has-xl-font-size" style="margin-bottom:var(--wp--preset--spacing--40);font-style:normal;font-weight:700">About Me</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"lg"} -->

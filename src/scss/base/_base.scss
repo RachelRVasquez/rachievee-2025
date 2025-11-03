@@ -46,7 +46,7 @@ input[type="submit"] {
 
 a {
 	transition: all .3s ease-in-out;
-	color: $color__link;
+	color: var(--wp--preset--color--accent-orange);
 	text-decoration: none;
 
 	&:visited {
@@ -77,8 +77,4 @@ pre {
     border-radius: 15px;
     padding: 1.5rem;
     color: var(--wp--preset--color--text-secondary);
-}
-
-hr {
-
 }

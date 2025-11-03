@@ -1,5 +1,5 @@
 /* Blocks ---------- */
-
+//@todo: need to be block stylesheets
 .has-header-gradient-gradient-background {
     margin-block-start: 0;
 }
@@ -8,26 +8,8 @@
     border: none;
 }
 
-.is-style-button-fill {
-    a {
-        border: 1px solid;
-        border-radius: 3px;
-        background: $color__background-button;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: var(--wp--preset--color--text-secondary);
-        line-height: 1;
-        padding: 0.6em 1em;
-
-        &:hover,
-        &:active,
-        &:focus {
-            transition: all .3s ease-in-out;
-            background: $color__border-button-hover;
-            box-shadow: 1px 2px 20px $color__background-button;
-        }
-    }
+.wp-block-separator {
+	border: 1px solid;
 }
 
 .is-style-button-outline,
@@ -35,26 +17,8 @@
     white-space: nowrap;
 
     a {
-        border: 1px solid $color__background-button;
-        border-radius: 3px;
-        background: transparent;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: $color__background-button;
-        line-height: 3;
-        padding: 0.6em 1em;
-        word-break: normal;
-        overflow-wrap: break-word;
-
-
-        &:hover,
-        &:active,
-        &:focus {
-            transition: all .3s ease-in-out;
-            background: $color__background-button;
-            color: var(--wp--preset--color--text-secondary);
-        }
+       @include link_btn_style();
+		line-height: 3;
     }
 
     &.taxonomy-post_tag {
@@ -69,41 +33,19 @@
 	position: relative;
 
 	a {
-		position: relative;
-		padding-right: 1.5em;
-		font-weight: bold;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+		@include link_arrow_style_base();
 	}
 }
 
 .is-style-arrow {
     a {
-        &::after {
-            content: "→";
-            position: absolute;
-            right: 0;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        &:hover::after {
-            transform: translateX(0.3em);
-        }
+       @include link_arrow_style_right();
     }
 }
 
 .is-style-down-arrow {
 	a {
-		&::after {
-			content: "→";
-			display: block;
-			transition: transform 0.3s ease-in-out;
-			transform: rotate(90deg);
-		}
-
-		&:hover::after {
-			transform: translate(0px, 3px) rotate(90deg);
-		}
+		@include link_arrow_style_down();
 	}
 }
 
@@ -122,18 +64,6 @@
     }
 }
 
-.wp-block-post>.wp-block-group.is-style-full-height {
+.wp-block-post > .wp-block-group.is-style-full-height {
     height: 100%;
-}
-
-//@todo: Add opacity options to editor
-.home .is-projects-query {
-    h3.has-background {
-        background-color: rgb(253 247 244 / 80%)!important;
-        a {
-            &:hover, &:active, &:focus {
-                color: inherit;
-            }
-        }
-    }
 }

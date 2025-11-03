@@ -18,7 +18,68 @@
 	}
 }
 
-//@todo: Add button and link styles
+/* LINK STYLES ---------------- */
+
+@mixin link_btn_style {
+	border: none;
+	border-radius: 3px;
+	background: var(--wp--preset--color--accent-orange);
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--wp--preset--color--text-secondary);
+	line-height: 1;
+	padding: 0.6em 1em;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		transition: all .3s ease-in-out;
+		background: $color__border-button-hover;
+		box-shadow: 1px 2px 20px var(--wp--preset--color--accent-orange);
+	}
+}
+
+@mixin link_arrow_style_base {
+	position: relative;
+	padding-right: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: var(--wp--preset--color--accent-orange);
+}
+
+@mixin link_arrow_style_right {
+	text-decoration: none;
+
+	&::after {
+		content: "→";
+		position: absolute;
+		right: 0;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	&:hover::after {
+		transform: translateX(0.3em);
+	}
+}
+
+@mixin link_arrow_style_down {
+	text-decoration: none;
+
+	&::after {
+		content: "→";
+		display: block;
+		transition: transform 0.3s ease-in-out;
+		transform: rotate(90deg);
+	}
+
+	&:hover::after {
+		transform: translate(0px, 3px) rotate(90deg);
+	}
+}
 
 /* UTILITIES  ---------------- */
 
