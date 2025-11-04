@@ -8,7 +8,8 @@
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}},"gradient":"header-gradient","layout":{"type":"constrained"}} -->
-<main class="wp-block-group has-header-gradient-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"left","level":1,"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}}},"fontFamily":"playfair-display"} -->
+<main class="wp-block-group has-header-gradient-gradient-background has-background" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">
+<!-- wp:heading {"textAlign":"left","level":1,"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50"}}},"fontFamily":"playfair-display"} -->
 <h1 class="wp-block-heading has-text-align-left has-playfair-display-font-family" style="padding-bottom:var(--wp--preset--spacing--50)"><?php esc_html_e('The RachieVee Blog', 'rachievee-2025');?></h1>
 <!-- /wp:heading -->
 

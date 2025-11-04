@@ -78,3 +78,24 @@ pre {
     padding: 1.5rem;
     color: var(--wp--preset--color--text-secondary);
 }
+
+button {
+	&.is-style-toggle-btn {
+		@include remove-btn-defaults();
+			display: flex;
+			align-items: center;
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: var(--wp--preset--color--text-secondary);
+			--r: .8em; /* control the cutout */
+			border-block: .5em solid #0000;
+			padding-inline: .5em calc(var(--r) + .25em);
+			line-height: 1.8;
+			clip-path: polygon(100% 0,0 0,0 100%,100% 100%,calc(100% - var(--r)) calc(100% - .25em),100% 50%,calc(100% - var(--r)) .25em);
+			background:
+				radial-gradient(.2em 50% at left,#000a,#0000) border-box,
+				$color__background-button-sass padding-box; /* the color  */
+			width: fit-content;
+
+	}
+}
