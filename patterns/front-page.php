@@ -264,7 +264,7 @@ echo sprintf( esc_html__( '%1$sView more projects%2$s', 'rachievee-2025' ), '<a 
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:visual-portfolio/block {"block_id":"R8hO0","align":"wide","content_source":"post-based","posts_order_direction":"asc","items_count":3,"items_style":"emerge"} /--></main>
+<!-- wp:visual-portfolio/block {"block_id":"R8hO0","align":"wide","content_source":"post-based","posts_order_direction":"asc","items_count":3,"items_style":"emerge","items_style_emerge__show_overlay":"always"} /--></main>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

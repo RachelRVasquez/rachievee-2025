@@ -11,9 +11,10 @@ body {
 	height: 100%;
 	font-family: var(--wp--preset--font-family--work-sans);
 
-	&.reduced-motion * {
-		transition: none !important;
+	&.reduced-motion *:not(.exclude-reduced-motion) {
+		transition-property: opacity, color, background-color !important;
 		animation: none !important;
+		transform: none !important;
 	}
 }
 
