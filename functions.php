@@ -70,7 +70,7 @@ if ( ! function_exists( 'rachievee_2025_styles' ) ) :
 			['rachievee-2025-style'], // make it load after the main one
 			$version_string
 		);
-		
+
 	}
 
 endif;
@@ -82,10 +82,18 @@ if ( ! function_exists( 'rachievee_2025_scripts' ) ) :
 	function rachievee_2025_scripts() {
 		$theme_version = wp_get_theme()->get( 'Version' );
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
-		
+
 		wp_enqueue_script(
 			'rachievee-2025-header-scroll',
 			get_template_directory_uri() . '/assets/js/header-scroll.js',
+			array(),
+			$version_string,
+			true
+		);
+
+		wp_enqueue_script(
+			'rachievee-2025-reduced-motion',
+			get_template_directory_uri() . '/assets/js/reduced-motion.js',
 			array(),
 			$version_string,
 			true
