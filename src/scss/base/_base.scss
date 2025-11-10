@@ -10,6 +10,12 @@ html {
 body {
 	height: 100%;
 	font-family: var(--wp--preset--font-family--work-sans);
+
+	&.reduced-motion *:not(.exclude-reduced-motion) {
+		transition-property: opacity, color, background-color !important;
+		animation: none !important;
+		transform: none !important;
+	}
 }
 
 .wp-site-blocks {
@@ -74,7 +80,7 @@ a {
 pre {
 	width: 100%;
 	background: var(--wp--preset--color--text-primary);
-    border-radius: 15px;
-    padding: 1.5rem;
-    color: var(--wp--preset--color--text-secondary);
+	border-radius: 15px;
+	padding: 1.5rem;
+	color: var(--wp--preset--color--text-secondary);
 }
