@@ -104,6 +104,18 @@
 	}
 }
 
+@mixin link_pagination_style {
+	background: var(--wp--preset--color--bg-header);
+	padding: .5rem .8rem;
+	border-radius: 4px;
+	border: 1px solid #2e2e2e;
+
+	&.current, &:hover, &:active, &:focus {
+		background: var(--wp--preset--color--accent-orange);
+		color: var(--wp--preset--color--text-secondary);
+	}
+}
+
 /* UTILITIES  ---------------- */
 
 @mixin remove-btn-defaults() {
