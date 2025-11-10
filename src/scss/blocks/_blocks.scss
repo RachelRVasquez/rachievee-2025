@@ -74,3 +74,10 @@
 .wp-block-post > .wp-block-group.is-style-full-height {
     height: 100%;
 }
+
+.wp-block-quote {
+	border: none;
+	border-left: 3px solid var(--wp--preset--color--heading-secondary);
+	font-size: 1.3rem;
+	color: var(--wp--preset--color--heading-secondary);
+}
