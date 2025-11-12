@@ -1,11 +1,17 @@
 /**
  * Reduce motion functionality
+ * todo: Update so JS still detects reduce motion settings and is not reliant on a button existing
  */
 (function() {
 	'use strict';
 
 	document.addEventListener('DOMContentLoaded', () => {
 		const button = document.getElementById('btn-reduce-motion');
+
+		if( button === null || typeof button === 'undefined') {
+			return;
+		}
+
 		const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 		// Initialize button state based on system preference

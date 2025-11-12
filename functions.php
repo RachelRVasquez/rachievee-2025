@@ -117,3 +117,16 @@ if ( ! function_exists( 'rachievee_2025_editor_styles' ) ) :
 endif;
 
 add_action( 'enqueue_block_editor_assets', 'rachievee_2025_editor_styles' );
+
+
+/**
+ * Auto register blocks in the blocks folder
+ */
+add_action( 'init', function() {
+	$block_folders = glob( get_template_directory() . '/blocks/*', GLOB_ONLYDIR );
+
+	foreach ( $block_folders as $block_dir ) {
+		register_block_type( $block_dir );
+	}
+} );
+

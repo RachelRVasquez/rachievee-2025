@@ -1,0 +1,12 @@
+{
+	"apiVersion": 2,
+	"name": "rachievee-2025/reduce-motion-button",
+	"title": "Reduce Motion Button",
+	"category": "widgets",
+	"icon": "visibility",
+	"description": "A toggle button that enables or disables reduced motion.",
+	"supports": {
+		"html": false
+	},
+	"renderCallback": "rachievee_2025_render_reduce_motion_btn"
+}
