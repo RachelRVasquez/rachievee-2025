@@ -12,24 +12,26 @@ namespace RachieVee2025;
  *
  * Child theme authors can access the objects via `theme( $abstract )`.
  *
+ * @param string $abstract
+ * @return mixed
  * @since  1.0.0
  * @access public
- * @param  string  $abstract
- * @return mixed
  */
-function theme( string $abstract = '' ) {
+function theme(string $abstract = '')
+{
 	static $bindings = null;
 
 	// On first run, create new components and boot them.
-	if ( is_null( $bindings ) ) {
+	if (is_null($bindings)) {
 		$bindings = [
-			BlockStyles::class    => new BlockStyles()
+			BlockStyles::class => new BlockStyles(),
+			BlockBindings::class => new BlockBindings()
 		];
 
-		foreach ( $bindings as $binding ) {
+		foreach ($bindings as $binding) {
 			$binding->boot();
 		}
 	}
 
-	return $abstract ? $bindings[ $abstract ] : $bindings;
+	return $abstract ? $bindings[$abstract] : $bindings;
 }

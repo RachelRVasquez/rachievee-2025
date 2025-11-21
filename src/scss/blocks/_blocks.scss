@@ -77,13 +77,13 @@
 
 .wp-block-quote {
 	border: none;
-	border-left: 3px solid var(--wp--preset--color--heading-secondary);
+	border-left: 3px solid $color__sub-heading;
 	font-size: 1.3rem;
-	color: var(--wp--preset--color--heading-secondary);
+	color: $color__sub-heading;
 }
 
 .wp-block-query-pagination {
-	font-family: var(--wp--preset--font-family--work-sans);
+	font-family: $base_font;
 	font-size: var( --wp--preset--font-size--base );
 	font-weight: bold;
 	font-style: normal;
