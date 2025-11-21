@@ -2,14 +2,24 @@
 	"scripts": {
 		"build:css": "sass src/scss:assets/css --no-source-map --style=compressed",
 		"build:js": "esbuild src/js/*.js --outdir=assets/js --bundle --minify",
+		"build:blocks": "npm-run-all build:blocks:css build:blocks:js",
+		"build:blocks:css": "sass blocks/:assets/blocks/ --load-path=node_modules",
+		"build:blocks:js": "esbuild blocks/**/edit.js --outdir=assets/blocks --bundle --minify",
 		"build": "npm-run-all build:*",
 		"watch:css": "sass --watch src/scss:assets/css",
 		"watch:js": "esbuild src/js/*.js --outdir=assets/js --bundle --watch",
+		"watch:blocks": "npm-run-all --parallel watch:blocks:css watch:blocks:js",
+		"watch:blocks:css": "sass --watch blocks/:assets/blocks/",
+		"watch:blocks:js": "esbuild blocks/**/edit.js --outdir=assets/blocks --bundle --watch",
 		"watch": "npm-run-all --parallel watch:*"
 	},
 	"devDependencies": {
 		"esbuild": "^0.25.0",
 		"npm-run-all": "^4.1.5",
-		"sass": "^1.93.2"
+		"sass": "^1.93.2",
+		"@wordpress/block-editor": "^15.8.0",
+		"@wordpress/components": "^30.8.0",
+		"@wordpress/element": "^6.35.0",
+		"@wordpress/i18n": "^6.8.0"
 	}
 }

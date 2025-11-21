@@ -115,3 +115,10 @@ if ( ! function_exists( 'rachievee_2025_editor_styles' ) ) :
 endif;
 
 add_action( 'enqueue_block_editor_assets', 'rachievee_2025_editor_styles' );
+
+function rachievee_register_custom_blocks() {
+	register_block_type( get_template_directory() . '/blocks/wave-divider' );
+}
+
+add_action('init', 'rachievee_register_custom_blocks');
+
