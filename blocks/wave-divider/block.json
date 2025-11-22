@@ -19,7 +19,7 @@
 			"default": false
 		}
 	},
-	"editorScript": "file:../../assets/blocks/wave-divider/edit.js",
-	"style": "file:../../assets/blocks/wave-divider/style.css",
-	"editorStyle": "file:../../assets/blocks/wave-divider/editor.css"
+	"editorScript": "file:./edit.js",
+	"editorStyle": "file:./editor.css",
+	"style": "file:./style.css"
 }
