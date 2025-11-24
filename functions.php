@@ -64,7 +64,7 @@ if ( ! function_exists( 'rachievee_2025_styles' ) ) :
 
 		wp_enqueue_style(
 			'rachievee-2025-main',
-			get_template_directory_uri() . '/assets/css/style.css',
+			get_template_directory_uri() . '/build/css/style.css',
 			['rachievee-2025-style'], // make it load after the main one
 			$version_string
 		);
@@ -83,7 +83,7 @@ if ( ! function_exists( 'rachievee_2025_scripts' ) ) :
 
 		wp_enqueue_script(
 			'rachievee-2025-header-scroll',
-			get_template_directory_uri() . '/assets/js/header-scroll.js',
+			get_template_directory_uri() . '/build/js/header-scroll.js',
 			array(),
 			$version_string,
 			true
@@ -91,7 +91,7 @@ if ( ! function_exists( 'rachievee_2025_scripts' ) ) :
 
 		wp_enqueue_script(
 			'rachievee-2025-reduced-motion',
-			get_template_directory_uri() . '/assets/js/reduced-motion.js',
+			get_template_directory_uri() . '/build/js/reduced-motion.js',
 			array(),
 			$version_string,
 			true
@@ -106,7 +106,7 @@ if ( ! function_exists( 'rachievee_2025_editor_styles' ) ) :
 	function rachievee_2025_editor_styles() {
 		wp_enqueue_style(
 			'rachievee-2025-editor',
-			get_template_directory_uri() . '/assets/css/editor.css',
+			get_template_directory_uri() . '/build/css/editor.css',
 			[],
 			wp_get_theme()->get( 'Version' ),
 			'all'
@@ -115,10 +115,15 @@ if ( ! function_exists( 'rachievee_2025_editor_styles' ) ) :
 endif;
 
 add_action( 'enqueue_block_editor_assets', 'rachievee_2025_editor_styles' );
-
 function rachievee_register_custom_blocks() {
-	register_block_type( get_template_directory() . '/blocks/wave-divider' );
-}
+	$custom_blocks = array (
+		'wave-divider',
+	);
 
-add_action('init', 'rachievee_register_custom_blocks');
+	foreach ( $custom_blocks as $block ) {
+		register_block_type( __DIR__ . '/build/blocks/' . $block );
+	}
+}
+add_action( 'init', 'rachievee_register_custom_blocks' );
+
 

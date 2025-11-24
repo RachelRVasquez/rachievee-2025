@@ -1,12 +1,16 @@
 /**
  * Reduce motion functionality
  */
-(function() {
+(function () {
 	'use strict';
 
 	document.addEventListener('DOMContentLoaded', () => {
 		const button = document.getElementById('btn-reduce-motion');
 		const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+		if (!button) {
+			return;
+		}
 
 		// Initialize button state based on system preference
 		const setInitialState = () => {

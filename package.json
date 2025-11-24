@@ -1,25 +1,22 @@
 {
 	"scripts": {
-		"build:css": "sass src/scss:assets/css --no-source-map --style=compressed",
-		"build:js": "esbuild src/js/*.js --outdir=assets/js --bundle --minify",
-		"build:blocks": "npm-run-all build:blocks:css build:blocks:js",
-		"build:blocks:css": "sass src/scss/blocks:blocks --no-source-map --style=compressed",
-		"build:blocks:js": "esbuild src/js/blocks/**/*.jsx --bundle --minify --loader:.js=jsx --outdir=blocks --external:react --external:react-dom --external:@wordpress/",
+		"build:css": "sass src/scss:build/css --no-source-map --style=compressed",
+		"build:js": "esbuild src/js/*.js --outdir=build/js --bundle --minify",
+		"build:blocks": "wp-scripts build",
 		"build": "npm-run-all build:*",
-		"watch:css": "sass --watch src/scss:assets/css",
-		"watch:js": "esbuild src/js/*.js --outdir=assets/js --bundle --watch",
-		"watch:blocks": "npm-run-all --parallel watch:blocks:css watch:blocks:js",
-		"watch:blocks:css": "sass --watch src/scss/blocks:blocks",
-		"watch:blocks:js": "esbuild src/js/blocks/**/*.jsx --watch --bundle --loader:.js=jsx --outdir=blocks --external:react --external:react-dom --external:@wordpress/",
+		"watch:css": "sass --watch src/scss:build/css",
+		"watch:js": "esbuild src/js/*.js --outdir=build/js --bundle --watch",
+		"watch:blocks": "wp-scripts start",
 		"watch": "npm-run-all --parallel watch:*"
 	},
 	"devDependencies": {
-		"esbuild": "^0.25.0",
-		"npm-run-all": "^4.1.5",
-		"sass": "^1.93.2",
 		"@wordpress/block-editor": "^15.8.0",
 		"@wordpress/components": "^30.8.0",
 		"@wordpress/element": "^6.35.0",
-		"@wordpress/i18n": "^6.8.0"
+		"@wordpress/i18n": "^6.8.0",
+		"@wordpress/scripts": "^31.0.0",
+		"esbuild": "^0.25.0",
+		"npm-run-all": "^4.1.5",
+		"sass": "^1.93.2"
 	}
 }

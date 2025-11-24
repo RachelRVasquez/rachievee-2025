@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rachievee-2025/wave-divider",
+  "version": "0.1.0",
+  "title": "Wave Divider",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Custom SVG edges for group blocks",
+  "example": {},
+  "supports": {
+    "html": true
+  },
+  "textdomain": "wave-divider",
+  "attributes": {
+    "flip": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
