@@ -12,8 +12,6 @@
 // Load Composer autoloader
 require_once get_template_directory() . '/vendor/autoload.php';
 
-use RachieVee2025;
-
 RachieVee2025\theme();
 
 

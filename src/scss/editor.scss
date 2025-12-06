@@ -21,3 +21,9 @@
 		@include link_arrow_style_down();
 	}
 }
+
+.is-style-button-fill {
+	a {
+		@include link_btn_style();
+	}
+}

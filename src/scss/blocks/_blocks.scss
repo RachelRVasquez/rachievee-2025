@@ -2,11 +2,11 @@
 //@todo: need to be block stylesheets
 
 .has-header-gradient-gradient-background {
-    margin-block-start: 0;
+	margin-block-start: 0;
 }
 
 .wp-block-image img {
-    border: none;
+	border: none;
 }
 
 .wp-block-separator {
@@ -14,25 +14,25 @@
 }
 
 .is-style-button-fill {
-	 a {
-		 @include link_btn_style();
-	 }
+	a {
+		@include link_btn_style();
+	}
 }
 
 .is-style-button-outline,
 .wp-block-post-terms {
-    white-space: nowrap;
+	white-space: nowrap;
 
-    a {
-       @include link_btn_style_outline();
+	a {
+		@include link_btn_style_outline();
 		line-height: 3;
-    }
+	}
 
-    &.taxonomy-post_tag {
-        a {
-            font-size: var(--wp--preset--font-size--xs);
-        }
-    }
+	&.taxonomy-post_tag {
+		a {
+			font-size: var(--wp--preset--font-size--xs);
+		}
+	}
 }
 
 .is-style-arrow,
@@ -45,9 +45,9 @@
 }
 
 .is-style-arrow {
-    a {
-       @include link_arrow_style_right();
-    }
+	a {
+		@include link_arrow_style_right();
+	}
 }
 
 .is-style-down-arrow {
@@ -57,33 +57,33 @@
 }
 
 .wp-block-post-title a:visited {
-    color: inherit;
+	color: inherit;
 }
 
 .wp-block-navigation-link,
 .wp-social-link {
-    a {
-        transition: transform .2s;
+	a {
+		transition: transform .2s;
 
-        &:hover {
-            transform: scale3d(1.2, 1.2, 1.2);
-        }
-    }
+		&:hover {
+			transform: scale3d(1.2, 1.2, 1.2);
+		}
+	}
 }
 
 .wp-block-post > .wp-block-group.is-style-full-height {
-    height: 100%;
+	height: 100%;
 }
 
 .wp-block-quote {
 	border: none;
-	border-left: 3px solid var(--wp--preset--color--heading-secondary);
+	border-left: 3px solid $color__sub-heading;
 	font-size: 1.3rem;
-	color: var(--wp--preset--color--heading-secondary);
+	color: $color__sub-heading;
 }
 
 .wp-block-query-pagination {
-	font-family: var(--wp--preset--font-family--work-sans);
+	font-family: $base_font;
 	font-size: var( --wp--preset--font-size--base );
 	font-weight: bold;
 	font-style: normal;
